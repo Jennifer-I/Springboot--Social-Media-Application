@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to facebook</title>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--    title>Welcome to Facebook</title>-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #4267B2;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3B5998;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>Welcome to Facebook</h1>
+    <p>Connect with friends and the world around you.</p>
+</div>
+<form action="@{/Welcome/}"  method="Post">
+    <div>
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" required autofocus>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="email" required autofocus>
+    </div>
+    <div>
+        <button type="submit">login</button>
+
+    </div>
+</form>
+<p>Please Signup <a href="SignUp.html">Create Account</a> </p>
+
+
+</body>
+</html>
